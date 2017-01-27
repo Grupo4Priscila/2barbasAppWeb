@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type="text/css">
+
+        section {
+            overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+            padding-bottom: 0px;
+            /* Definimos un padding superior */
+            padding-top:0px;
+        }
+        footer {
+            position: center;
+            /* Altura total del footer en px con valor negativo */
+            margin-top: 32px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 25px;
+            padding:2px 0px;
+            clear: both;
+            background: #000;
+            text-align: center;
+            color: #ffd700;
+        }
+
+        /* Esta clase define la anchura del contenido y la posicion centrada
+           El contenido queda centrado y limitado, pero la cabecera y el pie
+           llegan hasta los limites del navegador.
+        */
+        .define {
+            width:960px;
+            margin:0 auto;
+        }
+
+    </style>
+</head>
+<BODY BGCOLOR="#ffd700">
+
+<!--
+URL del artículo: http://www.ejemplode.com/17-html/94-ejemplo_de_comentario_en_html.html
+Nota completa: Comentario en HTML
+<img src="https://pbs.twimg.com/profile_images/816836242147082240/K1AuUTNS.jpg" alt="texto descriptivo">-->
+<center>
+<img src="images/oficial_logo.png" alt="Imagen 4barbones">
+    </center>
+<br/>
+<title>Login</title>
+<style>
+    input[type=aceptar] {
+        background-color: #CFC9C8;
+        border: none;
+        color: #000;
+        padding: 5px 5px;
+        text-decoration: none;
+        margin: 4px 2px;
+        text-align: center;
+        cursor: pointer;}
+</style>
+<body>
+
+<form action="view/home.html" method="get">
+    <fieldset style="border:0px ; background:#000;">
+        <center>
+        <br/>
+        <font color= "#ffd700" face="Amatic SC" size="5"><strong>Bienvenid@ Al Puente De Mando</strong></font><br />
+        <input type="text" name="nombre" placeholder="Email" size="30"><br/>
+        <input type="password" name="contra" placeholder="Contraseña" size="30"><br/>
+
+        <input type="aceptar" value="Aceptar" size="28" onclick="window.open('/2barbasAppWeb/view/home.html', 'width=800,height=600');"/><br/>
+        <a color="ffd700" href="http://www.facebook.com/">¿Ha olvidado su contraseña?</a>
+        <br/>
+            </center>
+    </fieldset>
+</form>
+</body>
+<footer>
+    <div class='define'>
+        <font color= "#ffd700" face="Didact Gothic" size="3"><strong>DOS BARBAS Design Thinking | Área Informática © 2017</strong></font><br/>
+    </div>
+</footer>
+</body>
+</html>

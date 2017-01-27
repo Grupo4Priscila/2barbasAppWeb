@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text], select {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 9px 0;
+        display: inline-block;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        box-sizing:content-box;
+    }
+
+    input[type=submit] {
+        width: 15%;
+        background-color: rgba(0, 0, 0, 0.16);
+        color: #000000;
+        padding: 5px 5px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #ffffff;
+        border-color: black;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+<body>
+
+<div>
+
+    <form action="infoCot1.php">
+        <label for="empEjec">Seleccione la empresa ejecutora</label>
+        <select id="empEjec" name="ejecutante">
+            <option value="playforthink">Play4Think</option>
+            <option value="ate">ATE</option>
+            <option value="consult">Consultora</option>
+        </select>
+<br>
+        <label for="empSolic">Empresa solicitante</label>
+        <input type="text" id="empSolic" name="firstname">
+        <br>
+        <label for="lugarEjec">Lugar de ejecución</label>
+        <input type="text" id="lugarEjec" name="lastname">
+        <br>
+        <label for="fechaInic">Fecha de inicio</label>
+        <input type="text" id="fechaInic" name="lastname">
+        <br>
+        <label for="fechaFin">Fecha de finalización</label>
+        <input type="text" id="fechaFin" name="lastname">
+        <br>
+
+
+        <input type="submit" value="Generar cotización proyecto"><br>
+        <input type="submit" value="Generar cotizacion curso" onclick="window.open('/2barbasAppWeb/view/cotizacion2.html', 'width=800,height=600');">
+    </form>
+</div>
+
+</body>
+</html>
