@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>formularioIngresoUsuario</title>
+    <link rel="stylesheet" href="/2barbasAppWeb/css/formularios.css">
+</head>
+<body>
+<fieldset>
+<form action="ingresarUsuario.php">
+
+<font color= "#147309" face="Didact Gothic" size="3"><strong>Ingresar Usuario</strong></font><br/>
+<div>
+<label for="Rut">Rut </label>
+<input type="text" id="Rut" name="firstname" required>
+    <DIV STYLE="position: absolute; top:48px; left:385px">
+<label for="guion"> - </label>
+</DIV>
+
+    <DIV STYLE="position:absolute; top:34px; left:400px">
+<input type="text" id="guion" name="firstname" size="10" required>
+    </DIV>
+<br>
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="lastname" required>
+<br>
+<label for="apellidopat"> Apellido Paterno</label>
+<input type="text" id="apellidopat" name="lastname" required>
+<br>
+<label for="apellidomat">Apellido Materno</label>
+<input type="text" id="apellidomat" name="lastname" required>
+<br>
+<label for="direccion">Direccion</label>
+<input type="text" id="direccion" name="lastname" required>
+<br>
+<label for="numDireccion">Número dirección</label>
+<input type="text" id="numDireccion" name="lastname" required>
+<br>
+<label for="telefonoMovil">Telefono móvil</label>
+<input type="text" id="telefonoMovil" name="lastname"placeholder="912345678" required>
+<br>
+<label for="telefonoFijo">Telefono Fijo</label>
+<input type="text" id="telefonoFijo" name="lastname"placeholder="552123456">
+<br>
+<label for="correoElectronico"> Correo Electrónico</label>
+<input type="text" id="correoelectronico" name="lastname" required>
+<br>
+
+<label for="rolUsuario">Rol del Usuario</label>
+<select id="rolUsuario" name="ejecutante">
+    <option value="ceo">C.E.O</option>
+    <option value="finanzas">Finanzas</option>
+    <option value="ventas">Ventas</option>
+    <option value="operaciones">Operaciones</option>
+    <option value="academia">Academia</option>
+    <!--
+    <option value="relator">Relator</option> -->
+</select>
+
+    <br>
+<input type="submit" value="Generar cotización proyecto"><br>
+<input type="submit" value="Generar cotizacion curso" onclick="window.open('/2barbasAppWeb/view/cotizacion2.html', 'width=800,height=600');">
+</div>
+
+</form>
+</fieldset>
+</body>
+</html>
